@@ -1,0 +1,42 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+float ReadRadious()
+{
+    float R;
+    
+    cout << "Please enter Radious R: " << endl;
+    cin >> R;
+    
+    return R;
+}
+
+float CircleArea(float R)
+{
+    
+    float area = pow(R, 2) * M_PI;
+    
+    return area;
+}
+
+void PrintResult(float area)
+{
+    cout << "\nCircle Area = " << area << endl;
+}
+int main()
+{
+    
+    PrintResult(CircleArea(ReadRadious()));
+
+    return 0;
+}
